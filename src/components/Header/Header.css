@@ -1,0 +1,15 @@
+header{
+    background: #ddd;
+    text-align: center;
+}
+
+header a{
+    display: inline-block;
+    color: #777;
+    text-decoration: none;
+    padding: 15px 25px;
+}
+
+header a.active{
+    color: black;
+}
