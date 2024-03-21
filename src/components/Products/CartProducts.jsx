@@ -40,7 +40,9 @@ const CartProducts = () => {
                 : '')}
             </div>
 
+            {sum > 0 ? 
             <div className="sum">Общая сумма: {sum}</div>
+            : <div className="sum">Корзина пуста</div>}
 
         </div>
     );

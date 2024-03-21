@@ -21,7 +21,7 @@ const Header = () => {
     return (
         <header>
             <nav>
-                <NavLink to="/">Oll product</NavLink>
+                <NavLink to="/">All product</NavLink>
                 <NavLink to="/electronics">Electronics</NavLink>
                 <NavLink to="/jewelery">Jewelery</NavLink>
                 <NavLink to="/men">Men`s Clothing</NavLink>

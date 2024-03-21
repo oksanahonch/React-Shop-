@@ -4,12 +4,12 @@ import './Products.css';
 import ProductOne from './ProductOne';
 import SelectFilter from './SelectFilter';
 
-const Electronics = () => {
+const ProductsAll = () => {
 
     const [productsAll, setProductsAll] = useState([]);
 
     const getProductsAll = async () => {
-        const response = await axios.get('https://fakestoreapi.com/products/category/electronics');
+        const response = await axios.get('https://fakestoreapi.com/products');
         setProductsAll(response.data);
     }
 
@@ -44,7 +44,7 @@ const Electronics = () => {
     return (
         <div className="products">
             <div className="header-page">
-                <h1>Electronics</h1>
+                <h1>All Products</h1>
                 <div>
                     {<SelectFilter handleChange={handleChange} sort={sort}  /> }
                 </div>
@@ -59,5 +59,4 @@ const Electronics = () => {
     );
 }
 
-
-export default Electronics;
+export default ProductsAll;

@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header/Header";
-import ProductsOll from "./components/Products/ProductsOll";
+import ProductsAll from "./components/Products/ProductsAll";
 import Electronics from "./components/Products/Electronics";
 import Jewelery from "./components/Products/Jewelery";
 import MenSClothing from "./components/Products/MenSClothing";
@@ -18,7 +18,7 @@ function App() {
         <Header />
 
         <Routes>
-          <Route path="/" element={<ProductsOll />} />
+          <Route path="/" element={<ProductsAll />} />
           <Route path="/electronics" element={<Electronics />} />
           <Route path="/jewelery" element={<Jewelery />} />
           <Route path="/men" element={<MenSClothing />} />
